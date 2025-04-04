@@ -31,3 +31,4 @@ echo hola|cat
 ech|o hola | cat
 export HOLA=bonjour | cat -e | cat -e
 export | echo hola
+whoami | grep $USER

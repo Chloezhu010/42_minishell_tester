@@ -73,3 +73,7 @@ echo hi | echo bye >>./test_files/invalid_permission
 echo hi | echo >>./outfiles/outfile01 bye >./test_files/invalid_permission
 cat <minishell.h>./outfiles/outfile
 cat <minishell.h|ls
+cat >>>
+cat >>
+cat >> <<
+cat < ls > ls
