@@ -2,3 +2,32 @@ env | sort | grep -v SHLVL | grep -v ^_
 cat ./test_files/infile_big | grep oi
 cat minishell.h | grep ");"$
 export GHOST=123 | env | grep GHOST
+echo | echo
+pwd | echo hola
+echo hola | echo que tal
+env | echo hola
+echo oui | echo non | echo hola | grep oui
+echo oui | echo non | echo hola | grep non
+echo oui | echo non | echo hola | grep hola
+echo oui | cat -e
+echo oui | cat -e | cat -e | cat -e
+cd .. | echo "hola"
+cd / | echo "hola"
+cd .. | pwd
+ifconfig | grep ":"
+ifconfig | grep hola
+ls | hola
+ls | ls hola
+ls | ls | hola
+ls | hola | ls
+ls | ls | hola | rev
+ls | ls | echo hola | rev
+ls -la | grep "'.'"
+echo test.c | cat -e| cat -e| cat -e| cat -e| cat -e| cat -e| cat -e| cat -e|cat -e|cat -e|cat -e
+ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls|ls
+echo hola | cat | cat | cat | cat | cat | grep hola
+echo hola | cat
+echo hola|cat
+ech|o hola | cat
+export HOLA=bonjour | cat -e | cat -e
+export | echo hola
