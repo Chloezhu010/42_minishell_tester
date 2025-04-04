@@ -41,8 +41,47 @@ echo $hola*
 echo -nnnn $hola
 echo > <
 echo | |
+echo $""
+echo "$"""
+echo '$'''
+echo $"HOME"
+echo $''HOME
+echo $""HOME
+echo "$HO"ME
+echo '$HO'ME
+echo "$HO""ME"
+echo '$HO''ME'
+echo "'$HO''ME'"
+echo ""$HOME
+echo "" $HOME
+echo $"HO""ME"
+echo $'HO''ME'
+echo $'HOME'
+echo $"HOME"
+echo "''h'o'la''"
+echo "'"h'o'la"'"
+echo"'hola'"
+echo "'hola'"
+echo '"hola"'
+echo '''ho"''''l"a'''
+echo hola""""""""""""
+echo hola"''''''''''"
+echo hola''''''''''''
+echo hola'""""""""""'
+e"cho hola"
+e'cho hola'
+echo "hola     " | cat -e
+echo "" hola
+echo ""hola
+echo ""                   hola
+""e"'c'ho 'b'"o"nj"o"'u'r"
+echo "$DONTEXIST" "Makefile"
+echo "$DONTEXIST""Makefile"
 pwd
 pwd oi
+pwd -p
+pwd --p
+pwd ---p
 export hello
 export HELLO=123
 export A-
@@ -52,12 +91,42 @@ export hello world
 export HELLO-=123
 export =
 export 123
+export
+export ""
+export Hola
+export $DONTEXIST
+export | grep "HOME"
+export 9HOLA=
+export ?=2
+export -HOLA=bonjour
+export --HOLA=bonjour
+export HO!LA=bonjour
+export HOLA=$HOMEbonjour
+export HOLA=bon$jour
+export HOLA=bon;jour
+export HOLA=bon!jour
+export A=1 B=2 C=3 D=4 E=5 F=6 G=7 H=8
+echo "$A'$B"'$C"$D'$E'"$F'"'$G'$H"
 unset
 unset HELLO
 unset HELLO1 HELLO2
 unset HOME
 unset PATH
 unset SHELL
+unset ""
+unset 9HOLA
+unset HOL!A
+unset HOL^A
+unset =
+unset HOME
+cd $HOME
+export hola | unset hola | echo $?
+cd ../
+cd ../..
+cd ../.
+cd .././././.
+cd -
+cd ---
 cd $PWD
 cd $PWD hi 
 cd 123123
@@ -71,4 +140,9 @@ exit "-100"
 exit -"100"
 exit hello
 exit 42 world
+exit hola 666
+
+
+
+
 
